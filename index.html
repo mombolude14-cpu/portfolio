@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Développeur Web Junior</title>
+    <meta name="description" content="Portfolio d'un étudiant en informatique basé à Brazzaville, spécialisé en développement web et logiciel.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Lude<span class="dot">.</span></a>
+            
+            <div class="nav-links">
+                <a href="#accueil" class="nav-link">Accueil</a>
+                <a href="#a-propos" class="nav-link">À propos</a>
+                <a href="#competences" class="nav-link">Compétences</a>
+                <a href="#projets" class="nav-link">Projets</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">
+                    <i class="fas fa-moon dark-icon"></i>
+                    <i class="fas fa-sun light-icon"></i>
+                </button>
+            </div>
+
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <div class="close-menu-btn">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="mobile-nav-links">
+            <a href="#accueil" class="mobile-nav-link">Accueil</a>
+            <a href="#a-propos" class="mobile-nav-link">À propos</a>
+            <a href="#competences" class="mobile-nav-link">Compétences</a>
+            <a href="#projets" class="mobile-nav-link">Projets</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+            <button id="mobile-theme-toggle" class="theme-toggle mt-4" aria-label="Changer de thème">
+                <i class="fas fa-moon dark-icon"></i>
+                <i class="fas fa-sun light-icon"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero section">
+        <div class="container hero-content">
+            <div class="hero-text fade-in-up">
+                <h2 class="greeting">Bonjour, je suis</h2>
+                <h1 class="name">Lude Mombo</h1>
+                <h2 class="title">Développeur Web Junior & Étudiant en Informatique</h2>
+                <p class="description">
+                    Je conçois des applications web modernes, performantes et adaptées aux besoins réels.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-outline">Me contacter</a>
+                </div>
+            </div>
+            <div class="hero-image fade-in-up delay-1">
+                <div class="image-wrapper">
+                    <img src="assets/images/hero.png" alt="Illustration développeur web">
+                    <div class="blob-bg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="a-propos" class="about section bg-alt">
+        <div class="container about-content">
+            <div class="section-header text-center fade-in-up">
+                <h2>À propos de moi</h2>
+                <div class="line"></div>
+            </div>
+            
+            <div class="about-grid fade-in-up delay-1">
+                <div class="about-card main-about">
+                    <h3>Mon Parcours</h3>
+                    <p>Je suis étudiant en informatique basé à Brazzaville, passionné par le développement d’applications web et logicielles.</p>
+                    <p>Au cours de ma formation, j’ai développé plusieurs projets pratiques, notamment des applications en C# et des interfaces web dynamiques, ce qui m’a permis de renforcer mes compétences en logique de programmation, en structuration de code et en résolution de problèmes.</p>
+                    <p>Je suis particulièrement motivé par la création de solutions concrètes et utiles, et je cherche aujourd’hui des opportunités pour mettre mes compétences en pratique dans un environnement professionnel.</p>
+                </div>
+                
+                <div class="about-card profile-bonus">
+                    <div class="icon-box">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Profil</h3>
+                    <p>Développeur junior sérieux et motivé, avec une forte capacité d’apprentissage et une bonne base technique.</p>
+                    <p>Je m’adapte rapidement aux nouveaux outils et je m’investis pleinement dans les projets que je réalise.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="competences" class="skills section">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <h2>Mes Compétences</h2>
+                <div class="line"></div>
+                <p class="section-subtitle">Les technologies et outils avec lesquels je travaille</p>
+            </div>
+
+            <div class="skills-grid fade-in-up delay-1">
+                <!-- Frontend -->
+                <div class="skill-category card">
+                    <div class="category-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="tag"><i class="fab fa-html5"></i> HTML</span>
+                        <span class="tag"><i class="fab fa-css3-alt"></i> CSS</span>
+                        <span class="tag"><i class="fab fa-js"></i> JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-category card">
+                    <div class="category-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend</h3>
+                    <div class="skill-tags">
+                        <span class="tag"><i class="fas fa-code"></i> C#</span>
+                        <span class="tag"><i class="fas fa-cubes"></i> .NET</span>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-category card">
+                    <div class="category-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Outils</h3>
+                    <div class="skill-tags">
+                        <span class="tag"><i class="fab fa-git-alt"></i> Git</span>
+                        <span class="tag"><i class="fas fa-code-branch"></i> Visual Studio</span>
+                        <span class="tag"><i class="fas fa-file-code"></i> VS Code</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projets" class="projects section bg-alt">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2>Mes Projets Réalisés</h2>
+                <div class="line-left"></div>
+                <p class="section-subtitle">Découvrez quelques-unes de mes réalisations concrètes.</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card card fade-in-up">
+                    <div class="project-img">
+                        <img src="assets/images/project-stock.png" alt="Application de gestion de stock">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">C#</span>
+                            <span class="tag">LocalStorage</span>
+                        </div>
+                        <h3>📦 Application de gestion de stock</h3>
+                        <p>Application complète permettant de gérer des produits, suivre les stocks et organiser les clients avec une interface fluide.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/mombolude14-cpu" target="_blank" class="btn-icon" aria-label="Code source sur GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="btn-icon" aria-label="Voir la démo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card card fade-in-up delay-1">
+                    <div class="project-img">
+                        <img src="assets/images/project-todo.png" alt="Application To-Do avancée">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <h3>📝 Application To-Do avancée</h3>
+                        <p>Application web dynamique permettant de gérer des tâches complexes avec des priorités, catégories, et sauvegarde locale.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/mombolude14-cpu" target="_blank" class="btn-icon" aria-label="Code source sur GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="btn-icon" aria-label="Voir la démo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card card fade-in-up delay-2">
+                    <div class="project-img">
+                        <img src="assets/images/project-ecommerce.png" alt="Mini e-commerce">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML/CSS</span>
+                        </div>
+                        <h3>🛒 Mini e-commerce</h3>
+                        <p>Interface intuitive et moderne permettant d’afficher des produits, filtrer les catégories et gérer un panier d'achats interactif.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/mombolude14-cpu" target="_blank" class="btn-icon" aria-label="Code source sur GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="btn-icon" aria-label="Voir la démo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <h2>Me Contacter</h2>
+                <div class="line"></div>
+                <p class="section-subtitle">Une question ou une opportunité ? N'hésitez pas à m'écrire.</p>
+            </div>
+
+            <div class="contact-grid fade-in-up delay-1">
+                <div class="contact-info">
+                    <h3>Discutons de votre projet</h3>
+                    <p>Je suis actuellement à la recherche de nouvelles opportunités. Mon e-mail est toujours ouvert !</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-details">
+                                <h4>Email</h4>
+                                <a href="mailto:mombolude14@gmail.com">mombolude14@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="method-details">
+                                <h4>WhatsApp</h4>
+                                <a href="https://wa.me/242068061683" target="_blank">+242 06 806 16 83</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-details">
+                                <h4>Localisation</h4>
+                                <span>Brazzaville, Congo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container card">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Adresse email</label>
+                            <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Comment puis-je vous aider ?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Envoyer le message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="logo">Lude<span class="dot">.</span></a>
+                    <p>Développeur Web Junior basé à Brazzaville. Créateur de solutions numériques modernes.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/mombolude14-cpu" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Lude Mombo. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
