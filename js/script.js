@@ -102,24 +102,5 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(element);
     });
 
-    // Contact Form Submission (Prevent Default for Demo)
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            // Simple validation feedback
-            const btn = contactForm.querySelector('button[type="submit"]');
-            const originalText = btn.innerHTML;
-            
-            btn.innerHTML = '<i class="fas fa-check"></i> Message envoyé !';
-            btn.style.backgroundColor = 'var(--accent)';
-            
-            setTimeout(() => {
-                contactForm.reset();
-                btn.innerHTML = originalText;
-                btn.style.backgroundColor = '';
-            }, 3000);
-        });
-    }
+    // Contact Form is now handled by formsubmit.co
 });
