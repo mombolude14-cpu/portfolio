@@ -64,25 +64,104 @@ Exemple attendu :
 
 ## 3. COMPÉTENCES
 
-Organiser en catégories :
-
-### Frontend
-- HTML
-- CSS
-- JavaScript
-
-### Backend
-- C#
-- .NET
-
-### Outils
-- Git
-- VS Code
-- Visual Studio
 
 Afficher :
 - Sous forme de badges ou barres de progression
+# 🧠 PROFIL TECHNIQUE AVANCÉ
 
+Le portfolio doit refléter un profil polyvalent avec des compétences en développement, réseaux et systèmes.
+
+---
+
+# 💻 COMPÉTENCES TECHNIQUES
+
+## 🔹 Développement Web
+- HTML / CSS / JavaScript
+- PHP
+- Conception d’interfaces web dynamiques
+
+---
+
+## 🔹 Programmation
+- C#
+- Java (Programmation Orientée Objet)
+- C
+- Python
+
+---
+
+## 🔹 Base de données
+- Conception de bases de données
+- Gestion et manipulation des données (SQL)
+- Modélisation simple (MERISE ou UML si possible)
+
+---
+
+## 🔹 Intelligence Artificielle (niveau débutant à intermédiaire)
+- Notions de base en IA
+- Réalisation d’un projet de prédiction de produits tendance
+- Manipulation de données pour analyse
+
+---
+
+## 🔹 Réseaux & Sécurité
+- Configuration des protocoles :
+  - OSPF
+  - RIP
+- Notions de sécurité réseau
+- Compréhension des architectures réseau
+
+---
+
+## 🔹 Systèmes
+- Administration système (notions)
+- Débutant en Linux (navigation, commandes de base)
+
+---
+
+## 🔹 Outils & Environnements
+- Git / GitHub
+- Visual Studio / VS Code
+- WinDev
+- intelij IDEA
+- cisco packet tracer
+- jupyter notebook
+- XAMPP
+
+---
+
+## 🔹 Expérience pratique
+
+### 🧾 Application de gestion de commandes (WinDev)
+- Conception d’une application de gestion
+- Manipulation de données
+- Interface utilisateur
+
+---
+
+### 📊 Projet IA - Prédiction de produits tendance
+- Analyse de données
+- Logique de prédiction
+- Implémentation en Python
+
+---
+
+# 🎯 POSITIONNEMENT
+
+Le profil doit apparaître comme :
+- Polyvalent
+- Technique
+- En progression
+- Capable de travailler sur différents types de projets
+
+---
+
+# ⚠️ RÈGLES IMPORTANTES
+
+- Ne pas simplement lister les technologies
+- Ajouter des descriptions courtes
+- Mettre en valeur les projets liés
+- Garder un design clair et lisible
 ---
 
 ## 4. PROJETS

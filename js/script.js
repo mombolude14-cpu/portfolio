@@ -102,5 +102,65 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(element);
     });
 
-    // Contact Form is now handled by formsubmit.co
+    // Copy Email to Clipboard
+    const copyEmailLink = document.getElementById('copy-email-link');
+    const emailCopiedMsg = document.getElementById('email-copied-msg');
+
+    if (copyEmailLink) {
+        copyEmailLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            navigator.clipboard.writeText('mombolude14@gmail.com').then(() => {
+                emailCopiedMsg.style.display = 'block';
+                setTimeout(() => {
+                    emailCopiedMsg.style.display = 'none';
+                }, 2000);
+            }).catch(err => {
+                console.error('Erreur lors de la copie : ', err);
+            });
+        });
+    }
+
+    // Gestion du formulaire de contact avec AJAX (Expérience Pro)
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault(); // Empêche la redirection vers la page FormSubmit
+
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.innerHTML;
+            
+            // Changer le bouton pour montrer que ça charge
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi en cours...';
+            submitBtn.disabled = true;
+
+            const formData = new FormData(this);
+
+            // Lien spécial pour l'envoi en arrière-plan sans quitter la page
+            const actionUrl = this.action.replace("formsubmit.co/", "formsubmit.co/ajax/");
+
+            fetch(actionUrl, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert('✅ Votre message a été envoyé avec succès !');
+                    contactForm.reset(); // Vider le formulaire
+                } else {
+                    alert('❌ Une erreur est survenue lors de l\'envoi.');
+                }
+            })
+            .catch(error => {
+                alert('❌ Impossible d\'envoyer le message. Vérifiez votre connexion.');
+            })
+            .finally(() => {
+                // Remettre le bouton à son état normal
+                submitBtn.innerHTML = originalBtnText;
+                submitBtn.disabled = false;
+            });
+        });
+    }
 });
